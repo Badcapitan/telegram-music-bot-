@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: telegram-music-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7674040954:AAGSKe49_9i0H40Czqt2udTkzPnF2Cjk06o
